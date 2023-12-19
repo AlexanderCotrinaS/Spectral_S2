@@ -10,9 +10,10 @@ p_load_gh(packages)
 # Load the study area raster -----------------
 area_raster_path <- here("data", "raster", "Limit.tif")
 area_raster <- rast(area_raster_path)
-plot(area_raster)
+plot(area_raster[[1]])
 
 # Load the Sentinel 2 spectral indices raster----------------------
+#raster_indices_path <- here("G:/My Drive/GEE/S2_20m.tif")
 raster_indices_path <- here("data", "raster", "S2_20m.tif") #S2_20m.tif <- https://drive.google.com/file/d/1bWFpkF4xD-XFNjUuXoKNMzJIi1YFPuv_/view?usp=sharing
 raster_indices <- rast(raster_indices_path)
 plot(raster_indices[[15]])
