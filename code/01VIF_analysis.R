@@ -13,7 +13,7 @@ area_raster <- rast(area_raster_path)
 plot(area_raster)
 
 # Load the Sentinel 2 spectral indices raster----------------------
-raster_indices_path <- here("data", "raster", "S2_20m.tif")
+raster_indices_path <- here("data", "raster", "S2_20m.tif") #S2_20m.tif <- https://drive.google.com/file/d/1bWFpkF4xD-XFNjUuXoKNMzJIi1YFPuv_/view?usp=sharing
 raster_indices <- rast(raster_indices_path)
 plot(raster_indices[[15]])
 
