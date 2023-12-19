@@ -85,8 +85,9 @@ result_sampled <- result_sampled %>%
 # Verify each class has 500 points and the proportion of T and V
 table(result_sampled$EUNIS_simpl, result_sampled$Type2)
 
-### Save the result (optional)
+### Save the result (optional)----------------------------------
 # output_dir_S <- here("data", "results", "shapes")
 # output_file_S <- "samples_S2_14clas.shp"
 # rout_save_S <- file.path(output_dir_S, output_file_S)
 # writeRaster(result_sampled, rout_save_S, overwrite = TRUE)
+
